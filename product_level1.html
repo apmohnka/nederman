@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nederman</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container hidden-xs">
+        <nav class="navbar navbar-slim">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs-block" href="#">Nederman</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">About Nederman</a>
+                        </li>
+                        <li><a href="#">Contact</a>
+                        </li>
+                        <li><a href="#">Support</a>
+                        </li>
+                        <li><a href="#">Green Thinking</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Change Language<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a>
+                                </li>
+                                <li><a href="#">Swiss</a>
+                                </li>
+                                <li><a href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Logged in as: <a href="#">Namn Efternamn</a> From: <a href="#">Company</a>
+                        </li>
+                        <li><a href="#"><span  class="navbar__messages"></span><span class="navbar__circlecounter">2</span></a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <nav class="navbar navbar-logo">
+            <figure class="navbar__logo"><img src="img/nederman-logo.png">
+            </figure>
+            <div class="navbar__shoppingcard"><a href="#">Your cart</a> contains<span class="navbar__circlecounter">3</span>items</div>
+        </nav>
+        <nav class="navbar navbar-normal">
+            <div class="container-fluid">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Our Products</a>
+                        </li>
+                        <li><a href="#">Product Finder</a>
+                        </li>
+                        <li><a href="#">Selection Tools</a>
+                        </li>
+                        <li><a href="#">Quick Order</a>
+                        </li>
+                        <li><a href="#">My Pages</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="SEARCH">
+                                </div>
+                                <button type="submit" class="btn btn-default">Go</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+    </div>
+
+
+
+<nav class="navbar navbar-default navbar-mobile visible-xs">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><figure class="navbar__logo"><img src="img/nederman-logo.png">
+            </figure></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-main">
+            <li class="active"><a href="#">Our Products</a></li>
+            <li><a href="#">Product Finder</a></li>
+            <li><a href="#">Selection Tools</a></li>
+            <li><a href="#">Quick Order</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Page One</a></li>
+                <li><a href="#">Page Two</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-additional">
+            <li><a href="#">About Nederman</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Change Language<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Sweedish</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Name Surname</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+        <ul class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Category Level 1 - 1</a></li>
+                        <li><a href="#">Category Level 1 - 2</a></li>
+                        <li><a href="#">Category Level 1 - 3</a></li>
+                    </ul>
+
+                    <a href="#">Prod Category Level 1</a>
+                </li>   
+                <li class="breadcrumb__item">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Category Level 2 - 1</a></li>
+                        <li><a href="#">Category Level 2 - 2</a></li>
+                        <li><a href="#">Category Level 2 - 3</a></li>
+                    </ul>
+
+                    <a href="#">Prod Category Level 2</a>
+                </li> 
+                <li class="breadcrumb__item">
+                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a></li>
+                    </ul>
+
+                    <a href="#">Current Product</a>
+                </li>        
+            </ul>
+    </div>
+    <div class="container category-listing">
+        <div class="row">
+           <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="category__item">
+                    <figure><img src="img/category-image.jpg">
+                    </figure>
+                    <div class="category__text">
+                        <h5>Cat Name</h5>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h4>Main Menu</h4>
+                    <ul class="footer__menu">
+                        <li>Our Products</li>
+                        <li>Product Finder</li>
+                        <li>Selection Tools</li>
+                        <li>Quick Order</li>
+                        <li>My Pages</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Nederman Nordic AB</h4>
+                    <p>Product Sales +46 42 18 87 87</p>
+                    <p>Service: +46 42 18 87 78</p>
+                    <p>Filtermax
+                        <br> Adress :
+                        <br> Box 602,
+                        <br> Helsingborg, 251 06 Sverige
+                        <br> Besöksadress : Rännarbanan 6 252 31 Helsingborg, Sverige
+                        <br> Telefon : +46 42 18 87 00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
