@@ -35,6 +35,15 @@ ul {
     li {}
 }
 
+h1 {
+    color: $color-blue;
+}
+
+p {
+    font-size: 130%;
+    line-height: 1.6;
+}
+
 .navbar-slim {
     font-size: 135%;
     ul {
@@ -390,6 +399,7 @@ ul {
     font-size: 170%;
     height: auto;
     overflow: visible;
+    min-height: 50px;
     .breadcrumb__item {
         position: relative;
         text-transform: uppercase;
@@ -408,9 +418,6 @@ ul {
             display: block;
             float: left;
         }
-
-
-
     }
     .breadcrumb__item.open {
         .dropdown-toggle {
@@ -430,31 +437,75 @@ ul {
     }
 }
 
-.category-listing {
-    .category__item {
-        figure {
+.category__item {
+    figure {
+        width: 100%;
+        img {
             width: 100%;
-            img {
-                width: 100%;
-            }
         }
     }
-    .category__text {
-        background: $color-blue2;
-        padding: 10px;
-        color: white;
-        height: 70px;
-        h5, p {
-            margin: 5px 0;
+}
+
+.category__text {
+    background: $color-blue2;
+    padding: 10px;
+    color: white;
+    height: 70px;
+    h5, p {
+        margin: 5px 0;
+    }
+    p {
+        font-size: 110%;
+        &:before {
+            content: '(';
         }
-        p {
-            font-size: 110%;
-            &:before {
-                content: '(';
-            }
-            &:after {
-                content: ')';
-            }
+        &:after {
+            content: ')';
+        }
+    }
+}
+
+.subcategory__item {
+    background: white;
+    min-height: 300px;
+    padding: 5%;
+    position: relative;
+    figure {
+        width: 100%;
+        padding: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    .btn {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        width: 90%;
+    }
+}
+
+.subcategory__text {
+    padding: 0 10px 5px 10px;
+    color: white;
+    h5 {
+        color: $color-blue;
+    }
+    h5, p {
+        margin: 5px 0;
+    }
+    p {
+        color: $color-gray;
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 767px) {
+    .subcategory__item {
+        .btn {
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     }
 }

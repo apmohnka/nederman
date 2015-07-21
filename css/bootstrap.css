@@ -1265,7 +1265,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 300%;
+  font-size: 340%;
 }
 h2,
 .h2 {
@@ -3061,17 +3061,18 @@ fieldset[disabled] a.btn {
   background-color: #0060a0;
   border-color: #ccc;
   text-transform: uppercase;
+  border: 1px solid #005b98;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #333;
-  background-color: #e6e6e6;
+  background-color: #f0f2f8;
   border-color: #8c8c8c;
 }
 .btn-default:hover {
   color: #333;
-  background-color: #fff;
-  border-color: #adadad;
+  background-color: #f0f2f8;
+  border: 1px solid #adadad;
 }
 .btn-default:active,
 .btn-default.active,
