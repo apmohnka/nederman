@@ -47,7 +47,10 @@ p {
 
 .navbar__logo {
   padding: 10px;
-  float: left; }
+  float: left;
+  width: 410px; }
+  .navbar__logo img {
+    width: 100%; }
 
 .navbar__shoppingcard {
   float: right;
@@ -125,6 +128,9 @@ p {
       line-height: 2; }
   .navbar-mobile .dropdown-menu li {
     border: none; }
+
+.btn {
+  text-transform: uppercase; }
 
 @media (max-width: 767px) {
   .navbar-form {
@@ -402,5 +408,79 @@ p {
 @media (max-width: 767px) {
   .counter {
     float: left; } }
+.login-page {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .login-page .navbar__logo {
+    width: 100%;
+    padding: 0; }
+  .login-page .form-signin .form-control {
+    width: 80%;
+    margin: 5% 10%; }
+
+.btn-alternative {
+  font-size: 120%;
+  background: #999; }
+  .btn-alternative:hover {
+    background: #666; }
+
+.btn-slim {
+  font-size: 130%;
+  padding: 8px; }
+
+.bnt-remove {
+  max-width: 100px;
+  font-size: 110%;
+  padding: 4px;
+  margin: 0; }
+
+.table tr th, .table tr td {
+  font-size: 120%;
+  border: 1px solid #ccc;
+  border-top: none; }
+.table tr th {
+  background: white;
+  border-bottom: none; }
+.table tr:nth-child(odd) td {
+  background: #e5e5e5; }
+.table tr:nth-child(even) td {
+  background: #fff; }
+.table tr .removebutton {
+  padding: 4px; }
+  .table tr .removebutton .btn {
+    float: right; }
+.table caption {
+  height: 40px;
+  padding: 0;
+  background: #cccccc; }
+.table input[type="text"].spinedit {
+  width: 40px;
+  height: 20px;
+  font-size: 100%;
+  border-radius: 3px;
+  border: 1px solid #bbb; }
+.table div.spinedit {
+  height: auto;
+  width: auto;
+  margin: 0; }
+  .table div.spinedit .icon-chevron-up, .table div.spinedit .icon-chevron-down {
+    float: right;
+    position: relative; }
+
+.table-header {
+  background: #0060a0 url("../img/table-header-ornament.png") no-repeat right;
+  display: inline-block;
+  padding: 10px 40px 10px 30px;
+  height: 40px;
+  font-size: 130%;
+  color: #fff; }
+
+.details-label {
+  font-size: 140%;
+  padding: 4px;
+  font-weight: normal;
+  margin: 0px; }
+  .details-label:after {
+    content: ':'; }
 
 /*# sourceMappingURL=style.css.map */

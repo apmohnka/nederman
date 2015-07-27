@@ -1618,7 +1618,7 @@ pre code {
   min-height: 1px;
   /*padding-right: 10px;
   padding-left: 10px;*/
-  padding: 10px;
+  padding: 8px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2552,7 +2552,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 38px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -3126,7 +3126,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #0060a0;
   border-color: #2e6da4;
 }
 .btn-primary:focus,
@@ -3137,7 +3137,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
+  background-color: #004a7b;
   border-color: #204d74;
 }
 .btn-primary:active,

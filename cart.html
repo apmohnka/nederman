@@ -10,12 +10,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-combobox.css" rel="stylesheet">
     <link href="css/bootstrap-spinedit.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-combobox.js"></script>
     <script src="js/bootstrap-spinedit.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -28,7 +32,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
                     <a class="navbar-brand visible-xs-block" href="#">Nederman</a>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -150,134 +153,129 @@
     </nav>
 
     <div class="container">
-        <ul class="breadcrumb">
-                <li class="breadcrumb__item">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Category Level 1 - 1</a></li>
-                        <li><a href="#">Category Level 1 - 2</a></li>
-                        <li><a href="#">Category Level 1 - 3</a></li>
-                    </ul>
+        <div class="row"><div class="col-md-12"><h1>Your Cart</h1></div><div class="col-md-12"></div></div>    
+        <div class="row">
+            <div class="col-lg-2"><h4>Quick Order</h4></div>
+            <div class="col-lg-2"><input id="quick-order" type="text" class="form-control" placeholder="123456"/></div>
+            <div class="col-lg-1"><input type="text" class="spinEdit" /></div>
+            <div class="col-lg-2"><button class="btn btn-primary btn-block btn-slim" type="submit">Add To Cart</button></div>
+        </div>      
+        <table class="table">
+        <caption><span class="table-header">Contents</span></caption>
+          <thead>
+            <tr>
+              <th>Name</th>              
+              <th>Item No</th>              
+              <th>QTY</th>              
+              <th>Delivery date</th>              
+              <th>Price</th>              
+              <th></th>              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Filterbox 10M</td>
+                <td>312121224</td>
+                <td><input type="text" class="spinEdit" /></td>
+                <td>2015.12.12</td>
+                <td>20 141</td>
+                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
+            </tr>
+            <tr>
+              <td>Filterbox 10M</td>
+                <td>312121224</td>
+                <td><input type="text" class="spinEdit" /></td>
+                <td>2015.12.12</td>
+                <td>20 141</td>
+                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
+            </tr>
+            <tr>
+              <td>Filterbox 10M</td>
+                <td>312121224</td>
+                <td><input type="text" class="spinEdit" /></td>
+                <td>2015.12.12</td>
+                <td>20 141</td>
+                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
+            </tr>
+            <tr>
+              <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+          </tbody>
+        </table>
 
-                    <a href="#">Product Cat 1</a>
-                </li>   
-                <li class="breadcrumb__item">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Category Level 2 - 1</a></li>
-                        <li><a href="#">Category Level 2 - 2</a></li>
-                        <li><a href="#">Category Level 2 - 3</a></li>
-                    </ul>
+         <table class="table">
+            <caption><span class="table-header">Summary</span></caption>
+        </table>
+        <div class="row">
+            <div class="col-md-offset-6 col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Print Card</button>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Send To Customer</button>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Save Card As</button>
+            </div>
+        </div>
 
-                    <a href="#">Product Cat 2</a>
-                </li> 
-                <li class="breadcrumb__item">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Product 1</a></li>
-                        <li><a href="#">Product 2</a></li>
-                        <li><a href="#">Product 3</a></li>
-                    </ul>
 
-                    <a href="#">Current Product</a>
-                </li>        
-            </ul>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Order Details</h3>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="col-md-4"><label class="details-label" for="customer-no">Customer No</label></div>
+                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="123456"></div>
+                <div class="col-md-4"><label class="details-label" for="customer-no">Name</label></div>
+                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="Name Surname"></div>
+                <div class="col-md-4"><label class="details-label" for="customer-no">E-mail</label></div>
+                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="name.surname@email.com"></div>
+                <div class="col-md-4"><label class="details-label" for="ship-to">Ship-to</label></div>
+                <div class="col-md-8"><textarea id="cship-to" rows="4" class="form-control" placeholder="123456">Company Name
+Street + No
+123 45 Town
+Additional information</textarea></div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="col-md-4"><label class="details-label" for="customer-no">Own order No</label></div>
+                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="123456"></div>
+                <div class="col-md-4"><label class="details-label" for="desired-delivery">Desired Delivery</label></div>
+                <div class="col-md-8"><input class="date-picker form-control" size="16" type="text" data-date-format="yyyy-mm-dd" placeholder="yyyy-mm-dd"></div>
+                <div class="col-md-4"><label class="details-label" for="customer-no">Comments</label></div>
+                <div class="col-md-8"><textarea id="customer-no" rows="4" class="form-control" placeholder="123456">Additional information about this order.
+Please leave the cargo at the docking bay.
+Please contact “Larry” on arrival.
+Thank you!</textarea></div>
+                <div class="col-md-4"><label class="details-label" for="customer-no">Delivery Method</label></div>
+                <div class="col-md-8"><select class="combobox form-control">
+                    <option></option>
+                      <option value="dhl">DHL Express</option>
+                      <option value="regular">Regular Post</option>
+                      <option value="priority">Priority Mail</option>
+                    </select></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-6 col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Cancel Order</button>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Send To Name</button>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Place Order</button>
+            </div>
+        </div>
+</div>
+
     </div>
-    <div class="container spare-parts">
-        <div class="row">
-           <div class="col-lg-6">
-                <h1>HEPA Filter H13 10m2  Filterbox</h1>
-           </div> 
-           <div class="col-lg-6">
-                <h5 class="social-button"><a href="#"><div class="icon icon-pdf"></div><span>Product PDF</span></a></h5>
-                <h5 class="social-button"><a href="#"><div class="icon icon-compare"></div><span>Compare Products</span></a></h5>
-                <h5 class="social-button"><a href="#"><div class="icon icon-fav"></div><span>Add to Favorites</span></a></h5>
-           </div> 
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="spare-part__image"><img src="img/spare-product.jpg"></figure>
-            </div>
-            <div class="col-sm-8">
-                <h3>A cost efficient manually cleaned unit for light to medium hygienic applications.</h3>
-                <p>Alphanumeric fragmentation solid theory broadband hybrid cascading services equipment. Cable protocol gigabyte. Cache ion sequential equipment null or application infrared application engineered. Principle by error scalar LED spectrum particle integral.</p>
-            </div>
-            <div class="col-sm-4">
-                <h4>Price: SEK 550 (inc VAT)</h4>
-                <p>Listed Price: SEK 1195</p>
-            </div>
-            <div class="col-sm-4"><div class="counter"><input type="text" class="spinEdit" /><button type="submit" class="btn btn-default">Add To Cart</button></div></div>
-        </div>
-        <div class="row">
-           <div class="col-md-12"><h3> Works with the following products</h3></div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="subcategory__item">
-                    <figure><img src="img/subcategory-image.jpg">
-                    </figure>
-                    <div class="subcategory__text">
-                        <h5>Cat Name</h5>
-                        <p>11 px - Integrated modular coolant cleaner for coolant filtering down to 30-50 microns.</p>
-                    </div>
-                    <button class="btn btn-default">Read More</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">

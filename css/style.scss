@@ -86,6 +86,10 @@ p {
 .navbar__logo {
     padding: 10px;
     float: left;
+    width: 410px;
+    img {
+        width: 100%;
+    }
 }
 
 .navbar__shoppingcard {
@@ -188,6 +192,10 @@ p {
     }
 }
 
+.btn {
+    text-transform: uppercase;
+}
+
 @media (max-width: 767px) {
     .navbar-form {
         width: 100%;
@@ -255,7 +263,7 @@ p {
 
 .offers__item {
     background: #e4f5fc;
-   /* max-height: 255px;*/
+    /* max-height: 255px;*/
     color: $color-blue;
     position: relative;
     overflow: auto;
@@ -570,5 +578,115 @@ p {
 @media (max-width: 767px) {
     .counter {
         float: left;
+    }
+}
+
+.login-page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .navbar__logo {
+        width: 100%;
+        padding: 0;
+    }
+    .form-signin {
+        .form-control {
+            width: 80%;
+            margin: 5% 10%;
+        }
+    }
+}
+
+.btn-alternative {
+    font-size: 120%;
+    background: #999;
+    &:hover {
+        background: #666;
+    }
+}
+
+.btn-slim {
+    font-size: 130%;
+    padding: 8px;
+}
+
+.bnt-remove {
+    max-width: 100px;
+    font-size: 110%;
+    padding: 4px;
+    margin: 0;
+}
+
+.table {
+    tr {
+        th, td {
+            font-size: 120%;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        th {
+            background: white;
+            border-bottom: none;
+        }
+        &:nth-child(odd) {
+            td {
+                background: #e5e5e5;
+            }
+        }
+        &:nth-child(even) {
+            td {
+                background: #fff;
+            }
+        }
+        .removebutton {
+            padding: 4px;
+            .btn {
+                float: right;
+            }
+        }
+    }
+    caption {
+        height: 40px;
+        padding: 0;
+        background: #cccccc;
+    }
+    input[type="text"].spinedit {
+        width: 40px;
+        height: 20px;
+        font-size: 100%;
+        border-radius:3px;
+        border: 1px solid #bbb;
+    }
+
+    div.spinedit {
+
+          height: auto;
+          width: auto;
+          margin:0;
+
+        .icon-chevron-up, .icon-chevron-down {
+            float:right;
+            position:relative;
+        }
+
+    }
+}
+
+.table-header {
+    background: $color-blue2 url("../img/table-header-ornament.png") no-repeat right;
+    display: inline-block;
+    padding: 10px 40px 10px 30px;
+    height: 40px;
+    font-size: 130%;
+    color: #fff;
+}
+
+
+.details-label {
+    font-size: 140%;
+    padding: 4px;
+    font-weight: normal;
+    margin: 0px;
+    &:after {
+        content: ':';
     }
 }
