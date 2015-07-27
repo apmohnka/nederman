@@ -152,14 +152,19 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container quickorder">
         <div class="row"><div class="col-md-12"><h1>Your Cart</h1></div><div class="col-md-12"></div></div>    
         <div class="row">
-            <div class="col-lg-2"><h4>Quick Order</h4></div>
-            <div class="col-lg-2"><input id="quick-order" type="text" class="form-control" placeholder="123456"/></div>
-            <div class="col-lg-1"><input type="text" class="spinEdit" /></div>
-            <div class="col-lg-2"><button class="btn btn-primary btn-block btn-slim" type="submit">Add To Cart</button></div>
-        </div>      
+            <div class="col-xs-5 col-sm-2 col-md-2 col-lg-offset-2"><h4>Quick Order</h4></div>
+            <div class="col-xs-7 col-sm-2 col-md-2"><input id="quick-order" type="text" class="form-control" placeholder="123456"/></div>
+            <div class="col-xs-5 col-sm-2 col-md-2"><a><p>Filterbox 10M<br>(Item no. 123456)</p></a></div>
+            <div class="col-xs-3 col-xs-6 col-sm-2 col-md-1"><figure class="quickorder-pic"><img src="img/quick-order.jpg"/></figure></div>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-1"><input type="text" class="spinEdit" /></div>
+            <div class="col-sm-2 col-md-2"><button class="btn btn-primary btn-block btn-slim" type="submit">Add To Cart</button></div>
+        </div>   
+    </div>
+
+    <div class="container">   
         <table class="table">
         <caption><span class="table-header">Contents</span></caption>
           <thead>
@@ -209,7 +214,7 @@
         </table>
 
          <table class="table">
-            <caption><span class="table-header">Summary</span></caption>
+            <caption class="summary-caption"><div class="table-header">Summary</div><div class="cart__items">7 Items</div><div class="cart__total">Total:</div><div class="cart__price">127 000 SEK</div></caption>
         </table>
         <div class="row">
             <div class="col-md-offset-6 col-md-2 col-sm-4">

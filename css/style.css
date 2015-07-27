@@ -453,6 +453,27 @@ p {
   height: 40px;
   padding: 0;
   background: #cccccc; }
+  .table caption .table-header {
+    background: url("../img/table-header-ornament.png") no-repeat right;
+    float: left;
+    padding: 10px 40px 10px 30px;
+    margin-right: 10px;
+    height: 40px;
+    font-size: 130%;
+    color: #fff; }
+.table .summary-caption {
+  background-color: white; }
+  .table .summary-caption .cart__items, .table .summary-caption .cart__total, .table .summary-caption .cart__price {
+    width: 15%;
+    padding: 11px 1%;
+    float: left;
+    font-size: 120%;
+    font-weight: bold;
+    color: #006699; }
+  .table .summary-caption .cart__price {
+    width: 30%; }
+  .table .summary-caption .cart__total {
+    text-align: right; }
 .table input[type="text"].spinedit {
   width: 40px;
   height: 20px;
@@ -467,14 +488,6 @@ p {
     float: right;
     position: relative; }
 
-.table-header {
-  background: #0060a0 url("../img/table-header-ornament.png") no-repeat right;
-  display: inline-block;
-  padding: 10px 40px 10px 30px;
-  height: 40px;
-  font-size: 130%;
-  color: #fff; }
-
 .details-label {
   font-size: 140%;
   padding: 4px;
@@ -482,5 +495,24 @@ p {
   margin: 0px; }
   .details-label:after {
     content: ':'; }
+
+.quickorder h4 {
+  text-align: right;
+  margin: 10px 0;
+  max-height: 15px; }
+.quickorder p {
+  text-align: right; }
+.quickorder .quickorder-pic {
+  margin-top: -10px;
+  border: 1px solid #ccc;
+  width: 60px;
+  height: 60px; }
+  .quickorder .quickorder-pic img {
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 767px) {
+  .quickorder h4, .quickorder p {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

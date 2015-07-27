@@ -648,38 +648,52 @@ p {
         height: 40px;
         padding: 0;
         background: #cccccc;
+        .table-header {
+            background: url("../img/table-header-ornament.png") no-repeat right;
+            float: left;
+            padding: 10px 40px 10px 30px;
+            margin-right:10px;
+            height: 40px;
+            font-size: 130%;
+            color: #fff;
+        }
+    }
+    .summary-caption {
+        background-color: white;
+        .cart__items, .cart__total, .cart__price {
+            width: 15%;
+            padding: 11px 1%;
+            float: left;
+            font-size: 120%;
+            font-weight: bold;
+            color: #006699;
+        }
+
+        .cart__price {
+            width: 30%;
+        }
+
+        .cart__total {
+            text-align: right;
+        }
     }
     input[type="text"].spinedit {
         width: 40px;
         height: 20px;
         font-size: 100%;
-        border-radius:3px;
+        border-radius: 3px;
         border: 1px solid #bbb;
     }
-
     div.spinedit {
-
-          height: auto;
-          width: auto;
-          margin:0;
-
+        height: auto;
+        width: auto;
+        margin: 0;
         .icon-chevron-up, .icon-chevron-down {
-            float:right;
-            position:relative;
+            float: right;
+            position: relative;
         }
-
     }
 }
-
-.table-header {
-    background: $color-blue2 url("../img/table-header-ornament.png") no-repeat right;
-    display: inline-block;
-    padding: 10px 40px 10px 30px;
-    height: 40px;
-    font-size: 130%;
-    color: #fff;
-}
-
 
 .details-label {
     font-size: 140%;
@@ -688,5 +702,34 @@ p {
     margin: 0px;
     &:after {
         content: ':';
+    }
+}
+
+.quickorder {
+    h4 {
+        text-align: right;
+        margin: 10px 0;
+        max-height: 15px;
+    }
+    p {
+        text-align: right;
+    }
+    .quickorder-pic {
+        margin-top: -10px;
+        border: 1px solid #ccc;
+        width: 60px;
+        height: 60px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .quickorder {
+        h4, p {
+            text-align: center;
+        }
     }
 }
