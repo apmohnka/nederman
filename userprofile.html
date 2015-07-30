@@ -152,129 +152,59 @@
       </div>
     </nav>
 
-    <div class="container quickorder">
-        <div class="row"><div class="col-md-12"><h1>Your Cart</h1></div><div class="col-md-12"></div></div>    
-        <div class="row">
-            <div class="col-xs-5 col-sm-2 col-md-2 col-lg-offset-2"><h4>Quick Order</h4></div>
-            <div class="col-xs-7 col-sm-2 col-md-2"><input id="quick-order" type="text" class="form-control" placeholder="123456"/></div>
-            <div class="col-xs-5 col-sm-2 col-md-2"><a><p>Filterbox 10M<br>(Item no. 123456)</p></a></div>
-            <div class="col-xs-3 col-xs-6 col-sm-2 col-md-1"><figure class="quickorder-pic"><img src="img/quick-order.jpg"/></figure></div>
-            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-1"><input type="text" class="spinEdit" /></div>
-            <div class="col-sm-2 col-md-2"><button class="btn btn-primary btn-block btn-slim" type="submit">Add To Cart</button></div>
-        </div>   
-    </div>
+    <div class="container"> 
 
-    <div class="container">   
-        <table class="table">
-        <caption><span class="table-header">Contents</span></caption>
-          <thead>
-            <tr>
-              <th>Name</th>              
-              <th>Item No</th>              
-              <th>QTY</th>              
-              <th>Delivery date</th>              
-              <th>Price</th>              
-              <th></th>              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                <td>Filterbox 10M</td>
-                <td>312121224</td>
-                <td><input type="text" class="spinEdit" /></td>
-                <td>2015.12.12</td>
-                <td>20 141</td>
-                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Filterbox 10M</td>
-                <td>312121224</td>
-                <td><input type="text" class="spinEdit" /></td>
-                <td>2015.12.12</td>
-                <td>20 141</td>
-                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
-            </tr>
-            <tr>
-              <td>Filterbox 10M</td>
-                <td>312121224</td>
-                <td><input type="text" class="spinEdit" /></td>
-                <td>2015.12.12</td>
-                <td>20 141</td>
-                <td class="removebutton"><button class="btn btn-lg btn-primary btn-block bnt-remove" type="submit">Remove</button></td>
-            </tr>
-            <tr>
-              <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-          </tbody>
-        </table>
-
-         <table class="table">
-            <caption class="summary-caption"><div class="table-header">Summary</div><div class="cart__items">7 Items</div><div class="cart__total">Total:</div><div class="cart__price">127 000 SEK</div></caption>
-        </table>
-        <div class="row">
-            <div class="col-md-offset-6 col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Print Card</button>
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Send To Customer</button>
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Save Card As</button>
-            </div>
-        </div>
-
+        <div class="row"><div class="col-md-12"><h1>User Settings</h1></div></div>     
 
         <div class="row">
-            <div class="col-md-12">
-                <h3>Order Details</h3>
-            </div>
-            <div class="col-sm-6 col-md-6">
+            
+            <div class="col-lg-6 col-md-8">
+                <div class="col-sm-12">
+                    <h3>Profile Details</h3>
+                </div>
                 <div class="col-md-4"><label class="details-label" for="customer-no">Customer No</label></div>
-                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="123456"></div>
+                <div class="col-md-3 col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optradio">My Prices</label></div>
+                </div>
+                <div class="col-md-3 col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optradio">List Prices</label></div>
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <div class="radio"><label><input type="radio" name="optradio">Off</label></div>
+                </div>
                 <div class="col-md-4"><label class="details-label" for="customer-no">Name</label></div>
                 <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="Name Surname"></div>
                 <div class="col-md-4"><label class="details-label" for="customer-no">E-mail</label></div>
                 <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="name.surname@email.com"></div>
                 <div class="col-md-4"><label class="details-label" for="ship-to">Ship-to</label></div>
-                <div class="col-md-8"><textarea id="cship-to" rows="4" class="form-control" placeholder="Company Name
+                <div class="col-md-8"><textarea id="ship-to" rows="4" class="form-control" placeholder="Company Name
 Street + No
 123 45 Town
 Additional information"></textarea></div>
+            <div class="col-md-offset-8 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Update Information</button>
             </div>
-            <div class="col-sm-6 col-md-6">
-                <div class="col-md-4"><label class="details-label" for="customer-no">Own order No</label></div>
-                <div class="col-md-8"><input id="customer-no" type="text" class="form-control" placeholder="123456"></div>
-                <div class="col-md-4"><label class="details-label" for="desired-delivery">Desired Delivery</label></div>
-                <div class="col-md-8"><input class="date-picker form-control" size="16" type="text" data-date-format="yyyy-mm-dd" placeholder="yyyy-mm-dd"></div>
-                <div class="col-md-4"><label class="details-label" for="customer-no">Comments</label></div>
-                <div class="col-md-8"><textarea id="customer-no" rows="4" class="form-control" placeholder="Additional information about this order.
-Please leave the cargo at the docking bay.
-Please contact “Larry” on arrival.
-Thank you!"></textarea></div>
-                <div class="col-md-4"><label class="details-label" for="customer-no">Delivery Method</label></div>
-                <div class="col-md-8"><select class="combobox form-control">
-                    <option></option>
-                      <option value="dhl">DHL Express</option>
-                      <option value="regular">Regular Post</option>
-                      <option value="priority">Priority Mail</option>
-                    </select></div>
+                <div class="col-sm-12">
+                    <h3>Password</h3>
+                </div>
+                 <div class="col-md-4"><label class="details-label" for="customer-no">Current Password</label></div>
+                <div class="col-md-8"><input id="customer-no" type="password" class="form-control" placeholder=""></div>
+                 <div class="col-md-4"><label class="details-label" for="customer-no">New Password</label></div>
+                <div class="col-md-8"><input id="customer-no" type="password" class="form-control" placeholder=""></div>
+                 <div class="col-md-4"><label class="details-label" for="customer-no">Repeat Password</label></div>
+                <div class="col-md-8"><input id="customer-no" type="password" class="form-control" placeholder=""></div>
+                <div class="col-md-offset-8 col-sm-4">
+                <button class="btn btn-primary btn-block btn-slim" type="submit">Update Password</button>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-offset-6 col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Cancel Order</button>
             </div>
-            <div class="col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Send To Name</button>
-            </div>
-            <div class="col-md-2 col-sm-4">
-                <button class="btn btn-primary btn-block btn-slim" type="submit">Place Order</button>
+            <div class="col-sm-4 col-md-4">
+                <div class="col-sm-12">
+                    <h3>Company Information</h3>
+                </div>
+                <div class="col-md-10"><textarea id="ship-to" rows="4" class="form-control" placeholder="Company Name
+Street + No
+123 45 Town
+Additional information"></textarea></div>
             </div>
         </div>
 </div>

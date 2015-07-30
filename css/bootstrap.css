@@ -149,6 +149,8 @@ input[type="radio"] {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
+    width: 20px;
+  height: 20px;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -2634,16 +2636,17 @@ input[type="search"] {
 .checkbox {
   position: relative;
   display: block;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 .radio label,
 .checkbox label {
   min-height: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
+  font-size: 120%;
+  line-height: 26px;
 }
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
@@ -2651,7 +2654,7 @@ input[type="search"] {
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-top: 4px \9;
-  margin-left: -20px;
+  margin-left: -30px;
 }
 .radio + .radio,
 .checkbox + .checkbox {
