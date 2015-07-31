@@ -14,6 +14,7 @@ input[type="text"].spinedit {
 	border-radius: 6px;
 	border: none;
 	float:left;
+	border: 1px solid #ccc;
 }
 .icon-chevron-up, .icon-chevron-down {
 	font-style: normal;

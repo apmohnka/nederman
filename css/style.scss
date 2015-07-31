@@ -523,6 +523,10 @@ p {
     margin: 10px;
 }
 
+.social-button__normal {
+    float: left;
+}
+
 @media (max-width: 1230px) {
     .social-button {
         float: left;
@@ -533,6 +537,12 @@ p {
     .social-button {
         span {
             display: none;
+        }
+    }
+
+    .social-button__normal {
+        span {
+            display: inline;
         }
     }
 }
@@ -609,10 +619,9 @@ p {
     padding: 8px;
 }
 
-.bnt-remove {
-    max-width: 100px;
+.btn-table {
     font-size: 110%;
-    padding: 4px;
+    padding: 5px;
     margin: 0;
 }
 
@@ -637,7 +646,7 @@ p {
                 background: #fff;
             }
         }
-        .removebutton {
+        .tablebtn {
             padding: 4px;
             .btn {
                 float: right;
@@ -732,4 +741,99 @@ p {
             text-align: center;
         }
     }
+}
+
+.product-listing {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .product-listing__header {
+        background: white;
+        border-radius: 4px;
+        color: $color-blue;
+        height: 58px;
+        padding: 7px 15px;
+        margin: 2px 0;
+
+        h4 {
+            max-width: 400px;
+            float: left;
+            .quantity {
+                color: #ef8521;
+
+                &:before {
+                    content: '(';
+                    padding-left: 10px;
+                }
+                &:after {
+                    content: ')';
+                }
+            }
+        }
+    }
+
+    .product-listing__open {
+        background: url('../img/arrow-big.png');
+        width: 42px;
+        height: 42px;
+        float: right;
+    }
+
+    .product-listing__item {
+        min-height: 60px;
+        background: #f2f3f4;
+        margin: 1px 0;
+        overflow: auto;
+
+        figure {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            float: left;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .btn {
+            margin: 5px 0;
+        }
+
+        .spinedit {
+            height: 40px;
+        }
+
+        input[type="text"].spinedit {
+            width: 55px;
+        }
+
+        .product-listing__name {
+            color: $color-blue;
+            font-size: 130%;
+            font-weight: bold;
+            display: block;
+        }
+        .product-listing__description {
+            font-size: 110%;
+        }
+
+        .product-listing__price {
+            font-size: 140%;
+            color: $color-blue2;
+            line-height: 42px;
+            float: right;
+        }
+    }
+
+    .product-listing__spareparts {
+        width: 100%;
+        margin-bottom:1px;
+        border: 1px solid #ccc;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
 }
