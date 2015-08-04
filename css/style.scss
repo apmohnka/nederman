@@ -619,6 +619,12 @@ p {
     padding: 8px;
 }
 
+.btn-gray {
+    font-size: 100%;
+    padding: 8px;
+    background: #6b7a82;
+}
+
 .btn-table {
     font-size: 110%;
     padding: 5px;
@@ -747,6 +753,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     .product-listing__header {
+        position: relative;
         background: white;
         border-radius: 4px;
         color: $color-blue;
@@ -775,7 +782,8 @@ p {
         background: url('../img/arrow-big.png');
         width: 42px;
         height: 42px;
-        float: right;
+        position: absolute;
+        right: 10px;
     }
 
     .product-listing__item {
@@ -783,6 +791,7 @@ p {
         background: #f2f3f4;
         margin: 1px 0;
         overflow: auto;
+        position: relative;
 
         figure {
             width: 40px;
@@ -823,6 +832,50 @@ p {
             line-height: 42px;
             float: right;
         }
+
+        .product-listing__desc {
+            font-size: 120%;
+            color: $color-blue;
+            display: inline-block;
+            width: 70px;
+        }
+
+        .product-listing__value {
+            font-size: 120%;
+        }
+
+        .product-listing__checkbox {
+            background: url("../img/checkbox.png") no-repeat;
+            background-position: 0 50%;
+            width: 41px;
+            height: 42px;
+            position: absolute;
+            right: 20px;
+            top:50%;
+          transform: translate(0,-50%);
+        }
+    }
+
+    .choose-model__price {
+        h4 {
+            color: $color-blue;
+            margin: 8px;
+        }
+
+        .choose-model__spinner {
+            padding: 10px 0;
+            height: 56px;
+        }
+    }
+
+    .product-listing__properties {
+        padding: 10px;
+        padding-right: 150px;
+
+        .col-lg-2 {
+            padding:5px;
+        }
+
     }
 
     .product-listing__spareparts {
@@ -836,4 +889,19 @@ p {
     }
 
 
+}
+
+@media (max-width: 767px) {
+    .product-listing .product-listing__properties {
+            padding: 10px;
+            padding-right: 0px;
+
+        }
+
+        .choose-model__price {
+
+        .choose-model__spinner {
+           margin-left: 20px;
+        }
+    }
 }
