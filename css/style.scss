@@ -46,9 +46,9 @@ p {
 
 .navbar-slim {
     font-size: 135%;
-    ul {
-        li {
-            a {
+    .navbar-nav {
+        > li {
+            > a {
                 display: inline-block;
                 color: #555;
             }
@@ -58,6 +58,7 @@ p {
             &:last-child:after {
                 content: '';
             }
+
         }
     }
     .navbar-right {

@@ -27,12 +27,12 @@ p {
 
 .navbar-slim {
   font-size: 135%; }
-  .navbar-slim ul li a {
+  .navbar-slim .navbar-nav > li > a {
     display: inline-block;
     color: #555; }
-  .navbar-slim ul li:after {
+  .navbar-slim .navbar-nav > li:after {
     content: '|'; }
-  .navbar-slim ul li:last-child:after {
+  .navbar-slim .navbar-nav > li:last-child:after {
     content: ''; }
   .navbar-slim .navbar-right li a {
     display: inline-block;
