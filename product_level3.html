@@ -35,9 +35,9 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#">About Nederman</a>
                         </li>
-                        <li><a href="#">Contact</a>
+                        <li class="hidden-sm"><a href="#">Contact</a>
                         </li>
-                        <li><a href="#">Support</a>
+                        <li class="hidden-sm"><a href="#">Support</a>
                         </li>
                         <li><a href="#">Green Thinking</a>
                         </li>
@@ -54,7 +54,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>Logged in as: <a href="#">Namn Efternamn</a> From: <a href="#">Company</a>
+                        <li><span class="visible-lg-inline">Logged in as:</span> <a href="#">Namn Efternamn</a>
                         </li>
                         <li><a href="#"><span  class="navbar__messages"></span><span class="navbar__circlecounter">2</span></a>
                         </li>
@@ -105,18 +105,25 @@
 
 
 
+
+
+
 <nav class="navbar navbar-default navbar-mobile visible-xs">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><figure class="navbar__logo"><img src="img/nederman-logo.png">
+        <div class="navbar-header"> <a class="navbar-brand" href="#"><figure class="navbar__logo"><img src="img/nederman-logo-small.png">
             </figure></a>
+
+            <div class="navbar-toggle mobile-buttons mobile-buttons__menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></div> 
+            <div class="mobile-buttons mobile-buttons__search" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search"></div>
+            <div class="mobile-buttons mobile-buttons__shopping" aria-expanded="false" aria-controls="navbar"></div>
+                  
+         
         </div>
+        <div id="search" class="mobile-search navbar-collapse collapse">
+                <div class="col-xs-10"><input type="text" class="form-control" placeholder="SEARCH"></div>
+                <div class="col-xs-2"><button type="submit" class="btn btn-default">Go</button></div>
+        </div><!--/.nav-collapse -->
+      </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-main">
             <li class="active"><a href="#">Our Products</a></li>
@@ -148,6 +155,11 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+
+
+    
+
 
     <div class="container">
         <ul class="breadcrumb">
@@ -195,11 +207,23 @@
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <figure class="spare-part__image"><img src="img/spare-product.jpg"></figure>
+                <figure class="spare-part__image"><img src="img/spare-product.jpg"><div class="image-description">Image description number 1</div></figure>
+                <div class="col-xs-3"><img class="small-images" src="img/quick-order.jpg"></img></div>
+                <div class="col-xs-3"><img class="small-images" src="img/quick-order.jpg"></img></div>
+                <div class="col-xs-3"><img class="small-images" src="img/quick-order.jpg"></img></div>
+                <div class="col-xs-3"><img class="small-images" src="img/quick-order.jpg"></img></div>
             </div>
             <div class="col-sm-8 col-md-4">
                 <h3>A cost efficient manually cleaned unit for light to medium hygienic applications.</h3>
                 <p>Alphanumeric fragmentation solid theory broadband hybrid cascading services equipment. Cable protocol gigabyte. Cache ion sequential equipment null or application infrared application engineered. Principle by error scalar LED spectrum particle integral.</p>
+                <h4>Standard features:</h4>
+                <ul class="standard-features">
+                    <li>Fan motor power: 0.9kW (1.2hp)</li>
+                    <li>Voltage: 400V</li>
+                    <li>Frequency: 50</li>
+                    <li>Phases: 3</li>
+                    <li>3m (10ft) Nederman original extraction arm</li>
+                </ul>
             </div>
             <div class="col-sm-12 col-md-4">
                 <table class="table">
@@ -333,14 +357,14 @@
                  <div class="col-lg-3 col-lg-offset-6 col-md-offset-4 col-md-4 col-sm-offset-0 col-sm-5">
                     <h4>Price: SEK 24.995 (excl VAT)</h4>
                 </div>
-                <div class="col-lg-1 col-md-2 col-sm-2 choose-model__spinner">
+                <div class="col-lg-1 col-md-2 col-sm-2 model__spinner">
                     <input type="text" class="spinEdit" />
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-3 col-md-offset-0 col-sm-offset-2">
                     <button class="btn btn-primary btn-block btn-slim" type="submit">Add to Cart</button>
                 </div>
                  <div class="col-lg-2 col-md-2 col-sm-3 col-md-offset-0 col-sm-offset-2">
-                    <button class="btn btn-primary btn-block btn-gray" type="submit">Add to Favourities</button>
+                    <button class="btn btn-primary btn-block btn-gray" type="submit">Add to Favorities</button>
                 </div>
             </div>
         </div>
@@ -374,7 +398,7 @@
          <table class="table"> 
             <thead>
                 <tr>
-                  <th class="col-xs-4">Positions Number</th>              
+                  <th>Positions Number</th>              
                   <th>Beskrivning</th>              
                   <th>Reservdelsnummer</th>              
                   <th>Antal</th>              
@@ -391,7 +415,7 @@
                 <td>1</td>
                 <td>SEK 399 (excl VAT)</td>
                 <td><input type="text" class="spinEdit" /></td>
-                <td class="col-xs-12 tablebtn"><button class="btn btn-lg btn-primary btn-block btn-table" type="submit">Add to cart</button></td>
+                <td class="tablebtn"><button class="btn btn-lg btn-primary btn-block btn-table" type="submit">Add to cart</button></td>
             </tr>
             <tr>
                 <td>1</td>
@@ -444,8 +468,7 @@
                     <h4>Nederman Nordic AB</h4>
                     <p>Product Sales +46 42 18 87 87</p>
                     <p>Service: +46 42 18 87 78</p>
-                    <p>Filtermax
-                        <br> Adress :
+                    <p> Adress :
                         <br> Box 602,
                         <br> Helsingborg, 251 06 Sverige
                         <br> Besöksadress : Rännarbanan 6 252 31 Helsingborg, Sverige

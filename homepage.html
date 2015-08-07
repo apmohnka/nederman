@@ -32,9 +32,9 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#">About Nederman</a>
                         </li>
-                        <li><a href="#">Contact</a>
+                        <li class="hidden-sm"><a href="#">Contact</a>
                         </li>
-                        <li><a href="#">Support</a>
+                        <li class="hidden-sm"><a href="#">Support</a>
                         </li>
                         <li><a href="#">Green Thinking</a>
                         </li>
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li>Logged in as: <a href="#">Namn Efternamn</a> From: <a href="#">Company</a>
+                        <li><span class="visible-lg-inline">Logged in as:</span> <a href="#">Namn Efternamn</a>
                         </li>
                         <li><a href="#"><span  class="navbar__messages"></span><span class="navbar__circlecounter">2</span></a>
                         </li>
@@ -104,16 +104,20 @@
 
 <nav class="navbar navbar-default navbar-mobile visible-xs">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><figure class="navbar__logo"><img src="img/nederman-logo.png">
+        <div class="navbar-header"> <a class="navbar-brand" href="#"><figure class="navbar__logo"><img src="img/nederman-logo-small.png">
             </figure></a>
+
+            <div class="navbar-toggle mobile-buttons mobile-buttons__menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"></div> 
+            <div class="mobile-buttons mobile-buttons__search" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search"></div>
+            <div class="mobile-buttons mobile-buttons__shopping" aria-expanded="false" aria-controls="navbar"></div>
+                  
+         
         </div>
+        <div id="search" class="mobile-search navbar-collapse collapse">
+                <div class="col-xs-10"><input type="text" class="form-control" placeholder="SEARCH"></div>
+                <div class="col-xs-2"><button type="submit" class="btn btn-default">Go</button></div>
+        </div><!--/.nav-collapse -->
+      </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-main">
             <li class="active"><a href="#">Our Products</a></li>
@@ -156,85 +160,78 @@
         </form>
     </nav>
     <div class="container recent-products">
-        <h4>Recent Products viewed by <a href="#">Thomas Newman</a></h4>
+        <div class="section-title"><h4>Recently viewed</h4></div>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="recent-products__item">
                     <figure><img src="img/recent-product.jpg">
                     </figure>
                     <div class="recent-products__inner">
-                        <h5>Product Name</h5>
-                        <h6>Item No: 12433546684</h6>
-                        <p>First 100 characters from go to up yes indeed.</p>
+                        <h6>Product Name</h6>
+                        <p>22355116223</p>
                     </div>
                     <a href="#" class="recent-products__delete"></a>
                 </div>
             </div>
-            
         </div>
     </div>
     <div class="container offers">
-        <h4>Offers / Pushes</h4>
+        <div class="section-title"><h4>Offers</h4></div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="offers__item">
@@ -272,7 +269,7 @@
         </div>
     </div>
     <div class="container products">
-        <h4>Our Products</h4>
+        <div class="section-title"><h4>Our Products</h4></div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="products__item">
@@ -473,8 +470,7 @@
                     <h4>Nederman Nordic AB</h4>
                     <p>Product Sales +46 42 18 87 87</p>
                     <p>Service: +46 42 18 87 78</p>
-                    <p>Filtermax
-                        <br> Adress :
+                    <p> Adress :
                         <br> Box 602,
                         <br> Helsingborg, 251 06 Sverige
                         <br> Besöksadress : Rännarbanan 6 252 31 Helsingborg, Sverige
