@@ -1,4 +1,8 @@
+	console.log('ie');
+
 $(document).ready(function(){
+
+
 
 	if($('.spinEdit').spinedit){
 		$('.spinEdit').spinedit({

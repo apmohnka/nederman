@@ -5,24 +5,24 @@ $background-color: #e5e7e8;
 
 @font-face {
     font-family: SohoGothicPro;
-    src: url("../fonts/SohoGothicPro-Regular.otf");
+    src: url("../fonts/SohoGothicPro-Regular.otf") format('truetype');
 }
 
 
 @font-face {
     font-family: SohoGothicPro-B;
-    src: url("../fonts/SohoGothicPro-Bold.otf");
+    src: url("../fonts/SohoGothicPro-Bold.otf") format('truetype');
 }
 
 
 @font-face {
     font-family: SohoGothicPro-M;
-    src: url("../fonts/SohoGothicPro-Medium.otf");
+    src: url("../fonts/SohoGothicPro-Medium.otf") format('truetype');
 }
 
 
 body {
-    font-family: SohoGothicPro;
+    font-family: SohoGothicPro, sans-serif;
     font-size: 100%;
     color: $color-gray;
     background: $background-color;
@@ -140,18 +140,14 @@ p {
     border-left: 0;
     border-right: 0;
     .navbar-form {
-        max-width: 582px;
-        height: 60px;
+        width: 100%;
         margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
         padding: 0;
+        background: none;
+        border: none;
     }
     .form-group {
-        width: 440px;
+        
         /*padding-left: 20px;*/
     }
     .form-control {
@@ -162,10 +158,9 @@ p {
         border-color: #666;
     }
     .btn {
-        width: 90px;
-        height: 45px;
+        width: 100%;
+        height: 60px;
         font-size: 200%;
-        margin-left: 20px;
     }
 }
 
@@ -207,21 +202,6 @@ p {
 
 .btn {
     text-transform: uppercase;
-}
-
-@media (max-width: 767px) {
-    .navbar-form {
-        width: 100%;
-        .btn {
-            width: 25%;
-            float: right;
-            height: 60px;
-            margin: 0;
-        }
-        .form-group {
-            width: 70%;
-        }
-    }
 }
 
 // HOMEPAGE
@@ -428,7 +408,6 @@ p {
 
 .breadcrumb {
     background: none;
-    font-size: 140%;
     height: auto;
     overflow: visible;
     min-height: 50px;
@@ -441,6 +420,7 @@ p {
             padding: 3px 10px;
             float: left;
             margin-right: 25px;
+            font-size: 140%;
         }
         .dropdown-toggle {
             border: none;

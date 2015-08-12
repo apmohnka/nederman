@@ -1,14 +1,14 @@
 @font-face {
   font-family: SohoGothicPro;
-  src: url("../fonts/SohoGothicPro-Regular.otf"); }
+  src: url("../fonts/SohoGothicPro-Regular.otf") format("truetype"); }
 @font-face {
   font-family: SohoGothicPro-B;
-  src: url("../fonts/SohoGothicPro-Bold.otf"); }
+  src: url("../fonts/SohoGothicPro-Bold.otf") format("truetype"); }
 @font-face {
   font-family: SohoGothicPro-M;
-  src: url("../fonts/SohoGothicPro-Medium.otf"); }
+  src: url("../fonts/SohoGothicPro-Medium.otf") format("truetype"); }
 body {
-  font-family: SohoGothicPro;
+  font-family: SohoGothicPro, sans-serif;
   font-size: 100%;
   color: #444;
   background: #e5e7e8; }
@@ -94,17 +94,12 @@ p {
   border-left: 0;
   border-right: 0; }
   .navbar-jumbotron .navbar-form {
-    max-width: 582px;
-    height: 60px;
+    width: 100%;
     margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 0; }
+    padding: 0;
+    background: none;
+    border: none; }
   .navbar-jumbotron .form-group {
-    width: 440px;
     /*padding-left: 20px;*/ }
   .navbar-jumbotron .form-control {
     width: 100%;
@@ -113,10 +108,9 @@ p {
     border-radius: 8px;
     border-color: #666; }
   .navbar-jumbotron .btn {
-    width: 90px;
-    height: 45px;
-    font-size: 200%;
-    margin-left: 20px; }
+    width: 100%;
+    height: 60px;
+    font-size: 200%; }
 
 .navbar-mobile {
   font-size: 160%; }
@@ -142,16 +136,6 @@ p {
 .btn {
   text-transform: uppercase; }
 
-@media (max-width: 767px) {
-  .navbar-form {
-    width: 100%; }
-    .navbar-form .btn {
-      width: 25%;
-      float: right;
-      height: 60px;
-      margin: 0; }
-    .navbar-form .form-group {
-      width: 70%; } }
 .recent-products__item {
   background: #f2f2f2;
   /*max-height: 184px;*/
@@ -299,7 +283,6 @@ p {
     background: none; } }
 .breadcrumb {
   background: none;
-  font-size: 140%;
   height: auto;
   overflow: visible;
   min-height: 50px; }
@@ -311,7 +294,8 @@ p {
     .breadcrumb .breadcrumb__item > a {
       padding: 3px 10px;
       float: left;
-      margin-right: 25px; }
+      margin-right: 25px;
+      font-size: 140%; }
     .breadcrumb .breadcrumb__item .dropdown-toggle {
       border: none;
       background: url("../img/breadcrumb-arrow.png");
